@@ -8,7 +8,6 @@ const createUser = async ({ firstname, lastname, email, password }) => {
       password,
     });
     return user;
-    return { user, token };
   } catch (error) {
     throw new Error(error);
   }
